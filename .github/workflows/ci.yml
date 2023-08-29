@@ -8,8 +8,9 @@ jobs:
         uses: actions/checkout@v2
       - name: Compile simple server
         run: make
-      - name: Run tests
+      - name: Run server
         run: ./server
+      - name: Run simple test
         run: curl http://localhost:8000
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
