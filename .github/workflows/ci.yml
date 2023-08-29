@@ -9,9 +9,9 @@ jobs:
       - name: Compile simple server
         run: make
       - name: Run server
-        run: ./server &
+        run: nohup ./server &
       - name: Run simple test
-        run: curl http://localhost:8000
+        run: curl-v http://localhost:8000
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
         with:
