@@ -1,2 +1,5 @@
 *.o
 server
+*.gcno
+*.gcda
+*.gcov
